@@ -1,4 +1,4 @@
-
+# test
 # vars
 install_dir = "#{node[:elixir][:art_dir]}"
 e_ver = "#{node[:elixir][:erl_ver]}"
