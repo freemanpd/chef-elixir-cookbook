@@ -1,4 +1,3 @@
-# test
 # vars
 install_dir = "#{node[:elixir][:art_dir]}"
 e_ver = "#{node[:elixir][:erl_ver]}"
@@ -12,7 +11,8 @@ arch = "#{node[:elixir][:rpm_arch]}"
   end
 end
 
-#ruby_block "update" do
+#to-do:
+# ruby_block "update" do
 # block do
 # back up existing directory, name it the versiion.bak and proceed with installation
 # end
@@ -36,6 +36,7 @@ remote_file "#{install_dir}/erlang/esl-erlang_#{e_ver}.#{arch}.rpm" do
   mode 0755
 end
 
+# to-do:
 # if centos/rhel 7 
 # http://packages.erlang-solutions.com/site/esl/esl-erlang/FLAVOUR_3_general/esl-erlang_17.4-1~centos~7_amd64.rpm
 
