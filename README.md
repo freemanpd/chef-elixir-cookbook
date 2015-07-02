@@ -1,2 +1,2 @@
 # chef-elixr-cookbook
-Cookbook to install Elixr on CentOS and RedHat systems
+Cookbook for installing Elixr on CentOS and RedHat systems
