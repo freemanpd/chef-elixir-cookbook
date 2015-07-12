@@ -65,5 +65,4 @@ e.g.
 
 License and Authors
 -------------------
-Authors:
-freemanpd
+Authors: TODO: List authors
