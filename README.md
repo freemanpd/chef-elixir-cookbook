@@ -5,13 +5,17 @@ This cookbook installs Elixir on CentOS and RedHat operating systems.
 Requirements
 ------------
 Chef (12.4.1 or greater)
+
 CentOS 7
+
 Red Hat Enterprise Linux (RHEL) 7
 
 Attributes
 ----------
 default[:elixir][:art_dir] - default installation directory
+
 default[:elixir][:elang_source] - Erlang source code location and version
+
 default[:elixir][:elixir_source] - Elixir source code location and version
 
 Usage
