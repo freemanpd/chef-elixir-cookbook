@@ -1,7 +1,7 @@
 # vars
 install_dir = "#{node[:elixir][:art_dir]}"
 erlang_source = "#{node[:elixir][:elang_source]}"
-elixr_source = "#{node[:elixir][:elixr_source]}"
+elixir_source = "#{node[:elixir][:elixir_source]}"
 
 # install unzip package
 %w{unzip}.each do |pak|
@@ -35,7 +35,7 @@ end
 
 # elixir
 remote_file "#{install_dir}/elixir/elixir.zip" do
-  source "#{elixr_source}"
+  source "#{elixir_source}"
   mode 0755
   notifies :run, "execute[elixir-zip]", :immediately
 end
@@ -46,7 +46,7 @@ execute "elixir-zip" do
   action :nothing
 end
 
-# create elixir system-wide environment viriables
+# create elixir system-wide environment variables
 bash "elixir-profiled" do
   code  <<-EOH
   echo "export PATH="$PATH:#{install_dir}/bin"" > /etc/profile.d/elixir.sh
