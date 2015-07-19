@@ -6,9 +6,10 @@ Requirements
 ------------
 Chef (12.4.1 or greater)
 
+Red Hat Enterprise Linux (RHEL) 7
+
 CentOS 7
 
-Red Hat Enterprise Linux (RHEL) 7
 
 Attributes
 ----------
